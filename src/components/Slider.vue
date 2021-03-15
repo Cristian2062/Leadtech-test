@@ -40,11 +40,6 @@
 </template>
 
 <style>
-*{
-    padding: 0;
-    margin: 0;
-    border: 0;
-}
 
 body{
   width: 100vw;
@@ -134,7 +129,6 @@ button{
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  z-index: 1;
 }
 
 .slider{
@@ -178,7 +172,6 @@ button{
 }
 
 .boton{
-  
   background-color: #252839;
   color: #1ba48b;
   font-size: 1.5vw;
@@ -206,6 +199,82 @@ a{
   height: 0.1vw;
   width: 25%;
   background-color: white;
+}
+
+@media only screen and (max-width:360px) {
+
+  body{
+    background-image: url("../assets/images/background.jpg");
+    background-position-y: 65vh;
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: 100vw;
+    grid-template-rows: 0vh 0vh 20vh 45vh;
+  }
+
+  .section3{
+    display: grid;
+    grid-template-columns: 100vw;
+    grid-template-rows: 37vh 16vh 7vh;
+  }
+
+  .sub-section1{
+    background-position-x: 26vw;
+    background-position-y: 4vh;
+  }
+
+  .sub-section2{
+    display: grid;
+    grid-template-rows: 80vh 0.3vh 4vh 3vh 0.8vh 1vh 58vh;
+    grid-template-columns: 100vw;
+    background-image: url("../assets/images/rocket.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: top;
+  }
+
+  .sub-section3{
+    display: none;
+  }
+
+  .sub-section4{
+    display: grid;
+    grid-template-rows: 0vh;
+    grid-template-columns: 0vw;
+  }
+
+  .section4{
+    display: grid;
+    grid-template-rows: 45vh;
+    grid-template-columns: 100vw;
+  }
+
+
+  .p-titular{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14vw;
+    font-weight: 700;
+    padding-left: 14vw;
+  }
+
+  .titular{
+    padding-top: 9vh;
+  }
+
+  .p-irocket{
+    font-family: 'Merriweather', serif;
+    font-size: 10vw;
+    font-weight: 600;
+    letter-spacing: 0.08vw;
+  }
+
+  .p-hastag{
+    font-family: 'Merriweather', serif;
+    font-style: italic;
+    font-size: 8vw;
+  }
 }
 
 </style>
